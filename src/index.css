@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-bold py-2 px-6 rounded-lg 
+    shadow-lg transform transition duration-200 hover:scale-105;
+  }
+  
+  .nav-durga-container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+  }
+  
+  .question-card {
+    @apply bg-white rounded-lg shadow-lg p-6 mb-4;
+  }
+  
+  .option-button {
+    @apply w-full text-left p-4 rounded-lg mb-2 border-2 hover:border-primary
+    transition-all duration-200 hover:bg-primary-light;
+  }
+}
+
+/* Custom Fonts and Styles */
+@font-face {
+  font-family: 'Sanskrit';
+  src: url('/fonts/sanskrit.woff2') format('woff2');
+}
+
+.sanskrit-text {
+  font-family: 'Sanskrit', sans-serif;
+}
