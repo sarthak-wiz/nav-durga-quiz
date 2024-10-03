@@ -31,14 +31,16 @@ export default function Result() {
   }, {});
 
   const handleShare = async () => {
-    const shareText = `I discovered my divine connection with ${matchedForm.name} through the Nav Durga Quiz! 🙏✨`;
+    if (!matchedForm) return;
+
+    const shareText = `I resonated ${percentages[result.form]}% with ${matchedForm.name} in the Nav Durga Quiz! Discover your divine connection: ${window.location.origin}`;
     
     try {
       if (navigator.share) {
         await navigator.share({
-          title: 'Nav Durga Quiz Result',
+          //title: 'My Nav Durga Quiz Result',
           text: shareText,
-          url: window.location.origin
+          //url: window.location.origin
         });
       } else {
         await navigator.clipboard.writeText(shareText);
