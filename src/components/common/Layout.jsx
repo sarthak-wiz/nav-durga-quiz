@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { useState, useEffect } from 'react';
 import Footer from './Footer';
 import Navbar from './NavBar';
@@ -27,6 +28,7 @@ export default function Layout({ children }) {
 
   return (
     <div className="bg-transparent min-h-screen flex flex-col">
+      <Analytics/>
       <Navbar />
       <main className="flex-grow">
         {children}
