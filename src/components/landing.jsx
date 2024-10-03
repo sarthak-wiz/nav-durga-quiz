@@ -47,7 +47,7 @@ export default function Landing() {
 
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-orange-100 to-transparent opacity-50" />
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-orange-50 to-transparent opacity-50" />
+        {/* <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-orange-50 to-transparent opacity-50" /> */}
       </div>
     </div>
   );
